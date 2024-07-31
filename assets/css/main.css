@@ -37,6 +37,10 @@ ol, ul {
 	list-style: none;
 }
 
+li{
+	margin-left: 3vw;
+}
+
 blockquote, q {
 	quotes: none;
 }
@@ -74,21 +78,26 @@ input, select, textarea {
 
 .mySwiper {
 	width: 80vw;
-	height: 80vh;
-	left: 3%;
+	height: 80vh;	
 	background-color: black;
   }
   .mySwiper2 {
 	width: 80vw;
-	height: 80vh;
-	left: 3%;
+	height: 80vh;	
 	background-color: black;
   }
   .mySwiper3 {
 	width: 80vw;
-	height: 40vh;
-	left: 3%;
+	height: 40vh;	
 	background-color: black;
+  }
+  .mySwiper4 {
+	width: 80vw;
+	height: 35vh;	
+	background-color: black;
+  }
+  .swiper-button-prev, .swiper-button-next, .swiper-pagination-bullets{
+	color: rgb(39, 80, 125);
   }
 .swiper-slide{
 	text-align: center;
@@ -103,17 +112,17 @@ input, select, textarea {
   
  /* Style the button that is used to open and close the collapsible content */
  .collapsible {
-	background-color:rgb(147, 199, 255);
-	color: #444;
+	background-color:rgb(39, 80, 125);
+	color: #ffffff;
 	cursor: pointer;
 	padding: 18px;
 	width: 100%;
 	border: none;
 	text-align: left;
 	outline: none;
-	font-size: 15px;
-	margin-left: 2.5em;
+	font-size: 15px;	
 	height: 4vh;
+	border-radius: 5px;
   }
     
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -2755,6 +2764,7 @@ input, select, textarea {
 		max-width: 54em;
 		padding: 8em 4em 4em 4em;
 		width: calc(100% - 35%);
+		background-color: #ffffff;
 	}
 
 		#main > section {
