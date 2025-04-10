@@ -1,461 +1,796 @@
 <!DOCTYPE HTML>
-<html>
-	<head>
-		<title>G McKnight - Devport</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<html lang="en">
 
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<!-- <a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a> -->
-					<h1><strong>Glenn McKnight</strong></h1> 
-					<h1><strong>Dev Portfolio</strong></h1>
+<head>
+	<title>G McKnight - Devport</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/splash.css" />
+	<link rel="stylesheet" href="assets/css/nav.css" />
+	<link rel="stylesheet" href="assets/css/about.css" />
+	<link rel="stylesheet" href="assets/css/projects.css" />
+	
+	<link rel="icon" href="images/icon/favicon.ico" />
+
+</head>
+
+<body>
+	<header id="splash">
+		<div class="splash">
+			<div id="splash-background" class="splash-background">
+				<div id="particles-js" class="splash-background">
+					<script type="text/javascript" src="assets/js/particles/particles.js"></script>
+					<script type="text/javascript" src="assets/js/particles/app.js"></script>
 				</div>
-				<div class="languages">
-					<p>A graduate developer looking for the first step in a new career path. Experience working in a variety of languages and frameworks, preference for backend.</p>
-					
+			</div>
+			<div class="splash-text">
+				<h1 class="animate pop">Glenn McKnight</h1>
+				<h1 class="animate pop delay-1">Developer Portfolio</h1>
+				<a class="splash-link animate pop delay-2" title="splash projects link" href="#about"> View My
+					Projects</a>
+			</div>
+		</div>
+	</header>
+	<nav class="nav-bar">
+		<ul class="nav-li">
+			<li id="nav-home" class="nav-item nav-item-active">
+				<a href="#splash">Home</a>
+			</li>
+			<li id="nav-about" class="nav-item nav-item-active">
+				<a href="#about">About</a>
+			</li>
+			<li id="nav-projects" class="nav-item nav-item-active">
+				<a href="#projects">Projects</a>
+			</li>
+		</ul>		
+	</nav>
+	<nav class="hamburger-nav">
+		<div class="hamburger-button" id="hamburger">&#9776;</div>
+		<ul class="hamburger-menu" id="hamburger-menu">
+		  <li><a href="#splash">Home</a></li>
+		  <li><a href="#about">About</a></li>
+		  <li><a href="#projects">Projects</a></li>
+		</ul>
+	  </nav>
+	<section id="about" class="about">
+		<h2 class="section-heading">About</h2>
+		<div id="about-main" class="about-main">
+			<div class="about-profile">
+				<img src="images/developer-8764524_1280.jpg" alt="Oops, missing programming image"
+					style="height: 30vh;" />
+				<p> <br><br> Driven, adaptable, and inquisitive software developer with a First Class Honours degree in
+					Computer Science and a genuine passion for building useful, thoughtful software. My journey into
+					development has been shaped by curiosity and a love of learning, reflected in projects like a
+					scalable, microservices-based social media app. I enjoy working across the stack and am always
+					looking for new challenges to grow and improve as a developer.</p>
+			</div>
+			<div class="about-skills">
+				<div class="skill-col">
+					<div class="skill-icon">
+						<img src="images/codingicons/csharp-original.svg" alt="C Sharp Icon" />
+						<div class="skill-icon-name">C#</div>
+					</div>
+					<div class="skill-icon">
+						<img src="images/codingicons/dotnetcore-original.svg" alt="Dotnetcore Icon" />
+						<div class="skill-icon-name">.Net Core</div>
+					</div>
+					<div class="skill-icon">
+						<img src="images/codingicons/kubernetes-original.svg" alt="Kubernetes Icon" />
+						<div class="skill-icon-name">Kubernetes</div>
+					</div>
+					<div class="skill-icon">
+						<img src="images/codingicons/docker-original.svg" alt="Docker Icon" />
+						<div class="skill-icon-name">Docker</div>
+					</div>
+					<div class="skill-icon">
+						<img src="images/codingicons/azure-original.svg" alt="Azure Icon" />
+						<div class="skill-icon-name">Azure</div>
+					</div>
 				</div>
-			</header>
-		<!-- Main -->
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-		/>
-		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-			<div id="main">				
-				<!-- One -->
-					<!-- <section id="one">
-						<header class="major">
-							<h2>Ipsum lorem dolor aliquam ante commodo<br />
-							magna sed accumsan arcu neque.</h2>
-						</header>
-						<p>ADccumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
-					</section> -->
-				<!-- Two -->
-					<section id="two">
-						<h1>My Work</h1>
-							<div class="row" style="padding-top: 1vh; padding-bottom: 4vh;">
-								<h3 style="border-top: 1px solid black; width: 100%;">Microservices Social Media Project - Social Dynamo</h3>
-								<!-- Slider main container -->
-								<div class="swiper mySwiper">
-									<!-- Additional required wrapper -->
-									<div class="swiper-wrapper">
-									<!-- Slides -->
-									<div class="swiper-slide">
-										<img src="images/fulls/sd_post_mobile.jpg" /> 
-									</div>
-									<div class="swiper-slide">
-										<img src="images/fulls/sd_feed.png" />
-									</div>
-									<div class="swiper-slide">
-										<img src="images/fulls/sd_profile.png" />
-									</div>
-									<div class="swiper-slide">
-										<img src="images/fulls/sd_comments.jpg" />
-									</div>
-									<div class="swiper-slide">
-										<img src="images/fulls/sd_login.png" />
-									</div>
-									<div class="swiper-slide">
-										<img src="images/fulls/sd_profile.png" />
-									</div>
-									<div class="swiper-slide">
-										<img src="images/fulls/sd_search.png" />
-									</div>
-									<div class="swiper-slide">
-										<img src="images/fulls/sd_followers.png" />
-									</div>										
-									</div>
-									<!-- If we need pagination -->
-									<div class="swiper-pagination"></div>
-								
-									<!-- If we need navigation buttons -->
-									<div class="swiper-button-prev"></div>
-									<div class="swiper-button-next"></div>
-								</div>									
-								<script>
-									const swiper = new Swiper('.mySwiper', {
-										// Optional parameters
-										direction: 'horizontal',
-										loop: true,
-									
-										// If we need pagination
-										pagination: {
-										el: '.swiper-pagination',
-										},
-									
-										// Navigation arrows
-										navigation: {
-										nextEl: '.swiper-button-next',
-										prevEl: '.swiper-button-prev',
-										},
-									
-										// And if we need scrollbar
-										scrollbar: {
-										el: '.swiper-scrollbar',
-										},
-									});
-								</script>
-								<article class="col-6 col-12-xsmall work-item"></article>								
-								<p>A microservices social media clone in .Net Core for the backend and React for the frontend; deployed on Azure and using a number of its services. Live hosted project with test profile. </p>
-								<p><br/>Live link: <a href="https://socdyn.com">https://socdyn.com</a></p>
-								<p><br/>Github: <a href="https://github.com/gmcknight-devport/SocialDynamo">https://github.com/gmcknight-devport/SocialDynamo</a></p>
-								<br>								
-								<p><strong> Test Profile: </strong>&emsp;<strong> Email address - </strong>vcanno@gmail.com,&emsp; <strong> Password -</strong> T3stPass1</p>
-								<br/>
-								<br/>
-								<button type="button" class="collapsible">More Info</button>								
-								<div class="content">									
-									<br/>
+				<div class="skill-col">
+					<div class="skill-icon">
+						<img src="images/codingicons/python-original.svg" alt="Python Icon" />
+						<div class="skill-icon-name">Python</div>
+					</div>
+					<div class="skill-icon">
+						<img src="images/codingicons/java-original.svg" alt="Java Icon" />
+						<div class="skill-icon-name">Java</div>
+					</div>
+					<div class="skill-icon">
+						<img src="images/codingicons/spring-original.svg" alt="Spring Icon" />
+						<div class="skill-icon-name">Spring Boot</div>
+					</div>
+					<div class="skill-icon">
+						<img src="images/codingicons/azuresqldatabase-original.svg" alt="SQL Icon" />
+						<div class="skill-icon-name">SQL</div>
+					</div>
+				</div>
+				<div class="skill-col">
+					<div class="skill-icon">
+						<img src="images/codingicons/html5-original.svg" alt="HTML Icon" />
+						<div class="skill-icon-name">HTML</div>
+					</div>
+					<div class="skill-icon">
+						<img src="images/codingicons/css3-original.svg" alt="CSS Icon" />
+						<div class="skill-icon-name">CSS</div>
+					</div>
+					<div class="skill-icon">
+						<img src="images/codingicons/javascript-original.svg" alt="JS Icon" />
+						<div class="skill-icon-name">Javascript</div>
+					</div>
+					<div class="skill-icon">
+						<img src="images/codingicons/react-original.svg" alt="React Icon" />
+						<div class="skill-icon-name">React</div>
+					</div>
+					<div class="skill-icon">
+						<img src="images/codingicons/git-original.svg" alt="Git Icon" />
+						<div class="skill-icon-name">Git</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<hr>
+	<section id="projects">
+		<h2 class="section-heading">Projects</h2>
+		<div class="project-grid">
+			<div class="project">
+				<div class="project-wrap" data-modal-trigger="modal-sd">
+					<img src="images/fulls/sd_post_mobile.jpg" alt="SD Image">
+					<h2>Microservices Social Media - Social Dynamo</h2>
+					<div class="project-text">
+						<p>Microservices project using the .Net Core framework and hosted using Azure, implementing
+							various services to deliver a responsive web application for users.</p>
+					</div>
+				</div>
+				<div class="project-buttons">
+					<div class="project-button">
+						<a href="https://socdyn.com" target="_blank"><img src="images/icon/world-globe-line-icon.png"
+								alt="Web Link"></a>
+					</div>
+					<div class="project-button">
+						<a href="https://github.com/gmcknight-devport/SocialDynamo" target="_blank"><img
+								src="images/icon/github-icon.png" alt="Git Link"></a>
+					</div>
+				</div>
+			</div>
+			<div class="modal-container" id="modal-sd">
+				<div class="modal">
+					<h2 class="modal-title">Microservices Social Media - Social Dynamo</h2>
+					<div class="gallery">
+						<div class="swiper mySwiper">
+							<!-- Additional required wrapper -->
+							<div class="swiper-wrapper">
+								<!-- Slides -->
+								<div class="swiper-slide">
+									<img src="images/fulls/sd_post_mobile.jpg" />
+								</div>
+								<div class="swiper-slide">
+									<img src="images/fulls/sd_feed.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="images/fulls/sd_profile.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="images/fulls/sd_comments.jpg" />
+								</div>
+								<div class="swiper-slide">
+									<img src="images/fulls/sd_login.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="images/fulls/sd_profile.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="images/fulls/sd_search.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="images/fulls/sd_followers.png" />
+								</div>
+							</div>
+							<!-- If we need pagination -->
+							<div class="swiper-pagination"></div>
+
+							<!-- If we need navigation buttons -->
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+						<script>
+							const swiper = new Swiper('.mySwiper', {
+								// Optional parameters
+								direction: 'horizontal',
+								loop: true,
+
+								// If we need pagination
+								pagination: {
+									el: '.swiper-pagination',
+								},
+
+								// Navigation arrows
+								navigation: {
+									nextEl: '.swiper-button-next',
+									prevEl: '.swiper-button-prev',
+								}
+							});
+						</script>
+					</div>
+					<br>
+					<p style="text-align: center;">A microservices social media clone in .Net Core for the backend and
+						React for the frontend;
+						deployed on Azure and using a number of its services. Live hosted project with test profile.
+					</p>
+					<div class="accordion-section">
+						<div class="accordion" id="links-sd">
+							<h1 class="accordion-title"><a href="#links-sd">Links & Test Data</a></h1>
+							<div class="accordion-content">
+								<div class="accordion-wrapper">
+									<h3>Test Profile</h3>
+									<li><strong>Email Address - </strong> vcanno@gmail.com </li>
+									<li><strong>Password - </strong> T3stPass1 </li>
+									<h3>Links</h3>
+									<li><a href="https://socdyn.com" target="_blank">🔗 Live Project</a></li>
+									<li><a href="https://github.com/gmcknight-devport/SocialDynamo" target="_blank">🐙
+											Github</a></li>
+								</div>
+							</div>
+						</div>
+						<div class="accordion" id="tech-sd">
+							<h1 class="accordion-title"><a href="#tech-sd">Technical Details</a></h1>
+							<div class="accordion-content">
+								<div class="accordion-wrapper">
 									<h3>Languages and Frameworks</h3>
-									<li>C#</li>
-									<li>.Net 8</li>
-									<li>React</li>
-									<li>SQL</li>
-									<li>CSS</li>
-									<br/>
+									<p>
+										C# &emsp; | &emsp; .Net 8 &emsp; | &emsp; React &emsp; | &emsp; HTML &emsp;
+										| &emsp; CSS &emsp; | &emsp; SQL
+									</p>
 									<h3>Project Focus</h3>
-									<li>Cloud platforms and programming</li>
-									<li>Microservices</li>
-									<li>Data storage and databases - relational and non-relational</li>
-									<li>Kubernetes</li>
-									<li>Large scale project</li>
-									<li>Authentication</li>
-									<br/>
+									<p>
+										Cloud platforms and programming &emsp; | &emsp; Microservices &emsp; |
+										&emsp; Data storage and databases - relational and non-relational &emsp; |
+										&emsp; Kubernetes &emsp; | &emsp; Large scale project &emsp; | &emsp;
+										Authentication
+									</p>
 									<h3>Architecture</h3>
-									<p>Clean Architecture and Domain-Driven Design using CQRS and Mediatr for communication between services. </p>
-									<br/>
-									<h3>Azure - AKS, Azure SQL Server and Database, Azure Storage Account, Azure Key Vault, AKV2K8S, Azure Container Registry, DNS zones, Azure Service Bus</h3>
+									<p>Clean Architecture and Domain-Driven Design using CQRS and Mediatr for
+										communication between services. </p>
+									<h3>Features</h3>
+
+									<li>Azure - AKS, Azure SQL Server and Database, Azure Storage Account, Azure Key
+										Vault, AKV2K8S, Azure Container Registry, DNS zones, Azure Service Bus</li>
 									<li>Http-only cookie authentication using Azure Key Vault and AKV2K8S</li>
 									<li>Responsive Design</li>
 									<li>CQRS and Mediatr</li>
-									<li>Cloud storage in SQL server and databases, and Azure Storage Account in Blobs</li>
+									<li>Cloud storage in SQL server and databases, and Azure Storage Account in
+										Blobs</li>
 									<li>EF Core</li>
 									<li>Service Bus communication between services</li>
 									<li>Aggregator combining services using API calls</li>
 									<li>Github version control</li>
 									<li>Unit and Integration Testing - XUnit</li>
-									<br/>
-									<h3>The Project</h3>
-									<p>Consists of 5 microservices:</p>
-									<li><u>Account microservice</u>: Controls all authentication and user information in the project. Implements CQRS, Mediatr, communicates with Service Bus, EF Core persistence.</li>
-									<li><u>Posts microservice</u>: Responsible for all posts on the platform and the features within those - comments, likes, comment likes, and deletion. Implements CQRS, Mediatr, communicates with Service Bus, EF Core persistence. </li>
-									<li><u>Media microservice</u>: Controls the media used in the project. Currently only allows images but potential for video in the future. Communicates directly with Azure Storage Account. Only accessed through the aggregator or communicated with using integration events. </li>
-									<li><u>Aggregator microservice</u>: Links microservice together using API calls - retrieves user profile data, retrieves feed data, creates posts (requires Account, Posts, and Media microservices), and searches Account and Posts microservices using fuzzy search interface implemented in each.</li>
-									<li><u>Gateway microservice</u>: Ocelot used for testing the APIs before deployment on AKS.</li>
-									<p>Additionally, Kubernetes is used for the ingress controller, Secrets Store CSI driver and AKV2K8S to control access and security, and deployment of the pods for each microservice. </p>
-									<br/>
-									<p>Frontend is written in React and CSS, it communicates with the microservices through API calls and is designed to be responsive for browser and mobile. </p>
-									<br/>
-									<h3>Future Improvements</h3>
-									<li>Implementation of record, struct, or value object instead of use of string for UserIds</li>
-									<li>Improved security using Identity/0auth2 etc</li>
-									<li>Additional functionality - instant messaging, notifications, companion Xamarin app</li>
-									<li>Specific mobile frontend using Backends For Frontends pattern</li>
-									<li>Refactoring the program.cs to improve readability and allow for easier expansion</li>
-								</div> 			
+
+								</div>
 							</div>
-							<div class="row" style="padding-top: 1vh; padding-bottom: 4vh;">
-								<h3 style="border-top: 1px solid black; width: 100%;">Machine Learning Python Project - MLStockPredictor</h3>
-								<div class="swiper mySwiper2" style="border: 1px solid black;">
-									<!-- Additional required wrapper -->
-									<div class="swiper-wrapper">
-									<!-- Slides -->
-									<div class="swiper-slide">
-										<img src="images/fulls/ml_mloptions.png" /> 
-									</div>
-									<div class="swiper-slide">
-										<img src="images/fulls/ml_results.png" />
-									</div>
-									<div class="swiper-slide">
-										<img src="images/fulls/ml_otheroptions.png" />
-									</div>
-									<div class="swiper-slide">
-										<img src="images/fulls/ml_statsresults_1.png" />
-									</div>
-									<div class="swiper-slide">
-										<img src="images/fulls/ml_statsresults_graph.png" />
-									</div>
-									</div>
-									<!-- If we need pagination -->
-									<div class="swiper-pagination"></div>
-								
-									<!-- If we need navigation buttons -->
-									<div class="swiper-button-prev"></div>
-									<div class="swiper-button-next"></div>
-								</div>									
-								<script>
-									const swiper2 = new Swiper('.mySwiper2', {
-										// Optional parameters
-										direction: 'horizontal',
-										loop: true,
-										
-										// If we need pagination
-										pagination: {
-											el: '.swiper-pagination',
-										},
-										
-										// Navigation arrows
-										navigation: {
-											nextEl: '.swiper-button-next',
-											prevEl: '.swiper-button-prev',
-										},
-										
-										// And if we need scrollbar
-										scrollbar: {
-											el: '.swiper-scrollbar',
-										},
-									});
-								</script>
-							<article class="col-6 col-12-xsmall work-item"></article>							
-							<p>Final year university project - exploration in the feasibility of using Machine Learning for predicting the stock market. </p>
-							<p><br/>Live link: <a href="https://share.streamlit.io/gmcknight-devport/streamlitimpl/main/main.py">https://share.streamlit.io/gmcknight-devport/streamlitimpl/main/main.py</a></p>
-							<p>Github: <a href="https://github.com/gmcknight-devport/ComputerScienceProject">https://github.com/gmcknight-devport/ComputerScienceProject</a></p>
-							<br/>
-							<br/>
-							<button type="button" class="collapsible">More Info</button>								
-							<div class="content">
-								<br/>
-								<h3>Languages and Frameworks</h3>
-								<li>Python</li>
-								<li>FastAPI</li>
-								<li>Streamlit</li>
-								<br/>
-								<h3>Project Focus</h3>
-								<li>Machine Learning Models</li>
-								<li>Lightweight API implementation</li>
-								<li>Strongly, dynamically typed language</li>
-								<li>Sentiment Analysis from web scraping</li>
-								<br/>
-								<h3>Architecture</h3>
-								<p>Research project using functional programming, API using OOP, Streamlit frontend implementation</p>
-								<br/>
-								<h3>Features</h3>
-								<li>Keras models - LSTM, Recurrent Neural Network, Convolutional Neural Network, GRU, BiDirectional Model, Random Forest</li>
-								<li>Sentiment Analysis and web scraping</li>
-								<li>Ensemble models combining ML and Sentiment Analysis - allows any combination Keras model with SA</li>
-								<li>Naive model for baseline</li>
-								<li>Pre and post data processing</li>
-								<li>Traditional financial analysis - ArimaAuto, Moving Averages</li>
-								<li>Abstract factories used extensively</li>
-								<li>API implemented a sample analysis models</li>
-								<li>Frontend allowing the API to be used</li>
-								<br/>
-								<h3>The Project</h3>
-								<p>Research Project - used a series of clients allowing factories for different types of ML models to be implemented and analysed for accuracy and efficacy.</p>
-								<br/>
-								<p>FastAPI implementation of selected models allowing a frontend to be built for a user to experiment with the models.</p>
-								<br/>
-								<p>Streamlit implementation allows users to interact with the models.</p>
-								<br/>
-								<p>Though the research was extensive, due to the lack of predictable markers, the models resort to following a random walk and copying the previous data point resulting in a graph and accuracy score that look almost perfect, belying the fact that the algorithm is always 1 step behind the market. The various implementations could not outperform a buy-and-hold strategy due to the implications of the Random Walk and Efficient Market hypothesis. Models with a basis in traditional financial analysis provided a much better end result, usually outperforming the baseline, providing solid and reliable information to make executive decisions.</p>
-								<br/>
-								<p>There is potential for Machine Learning tools to be implemented to support traditional stock forecasting tools and industry professionals alongside Sentiment Analysis to more accurately predict market movements.</p>
-							</div>							
-						</div>					
-					<div class="row" style="padding-top: 1vh; padding-bottom: 4vh;">
-						<h3 style="border-top: 1px solid black; width: 100%;">Unity Android App - Yurt Designer</h3>
+						</div>
+						<div class="accordion" id="proj-sd">
+							<h1 class="accordion-title"><a href="#proj-sd">Project Details</a></h1>
+							<div class="accordion-content">
+								<div class="accordion-wrapper">
+									<p>Consists of 5 microservices:</p>
+									<ul><strong style="color: #0088CC;">Account microservice - </strong> Controls all
+										authentication and user
+										information in the project. Implements CQRS, Mediatr, communicates with Service
+										Bus, EF Core persistence.</ul>
+									<ul><strong style="color: #0088CC;">Posts microservice - </strong> Responsible for
+										all posts on the platform
+										and the features within those - comments, likes, comment likes, and deletion.
+										Implements CQRS, Mediatr, communicates with Service Bus, EF Core persistence.
+									</ul>
+									<ul><strong style="color: #0088CC;">Media microservice - </strong> Controls the
+										media used in the project.
+										Currently only allows images but potential for video in the future. Communicates
+										directly with Azure Storage Account. Only accessed through the aggregator or
+										communicated with using integration events. </ul>
+									<ul><strong style="color: #0088CC;">Aggregator microservice - </strong> Links
+										microservice together using
+										API calls - retrieves user profile data, retrieves feed data, creates posts
+										(requires Account, Posts, and Media microservices), and searches Account and
+										Posts microservices using fuzzy search interface implemented in each.</ul>
+									<ul><strong style="color: #0088CC;">Gateway microservice - </strong> Ocelot used for
+										testing the APIs before
+										deployment on AKS.</ul>
+									<p>Kubernetes is used for the ingress controller, Secrets Store CSI driver and
+										AKV2K8S to control access and security, and deployment of the pods for each
+										microservice. </p>
+									<p>Frontend is written in React and CSS, communicates with the microservices through
+										API calls and is designed to be responsive for browser and mobile. </p>
+								</div>
+							</div>
+						</div>
+						<div class="accordion" id="future-sd">
+							<h1 class="accordion-title"><a href="#future-sd">Future Improvements</a></h1>
+							<div class="accordion-content">
+								<div class="accordion-wrapper">
+									<li>Implementation of record, struct, or value object instead of use of string for
+										UserIds</li>
+									<li>Improved security using Identity/0auth2 etc</li>
+									<li>Additional functionality - instant messaging, notifications, companion Xamarin
+										app</li>
+									<li>Specific mobile frontend using Backends For Frontends pattern</li>
+									<li>Refactoring the program.cs to improve readability and allow for easier expansion
+									</li>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a class="close-button modal-close" role="button" tabindex="0"></a>
+				</div>
+			</div>
+			<div class="project">
+				<div class="project-wrap" data-modal-trigger="modal-mlsp">
+					<img src="images/fulls/ml_mloptions.png" alt="ML Image">
+					<h2>Machine Learning - MLStockPredictor</h2>
+					<div class="project-text">
+						<p>Machine Learning project with base functional programming model construction, sentiment
+							analysis, and comparison to traditional financial analysis. FastAPI and Streamlit
+							implementations.</p>
+					</div>
+				</div>
+				<div class="project-buttons">
+					<div class="project-button">
+						<a href="https://share.streamlit.io/gmcknight-devport/streamlitimpl/main/main.py"
+							target="_blank"><img src="images/icon/world-globe-line-icon.png" alt="Web Link"></a>
+					</div>
+					<div class="project-button">
+						<a href="https://github.com/gmcknight-devport/ComputerScienceProject" target="_blank"><img
+								src="images/icon/github-icon.png" alt="Git Link"></a>
+					</div>
+				</div>
+			</div>
+			<div class="modal-container" id="modal-mlsp">
+				<div class="modal">
+					<h2 class="modal-title">Machine Learning Python Project - MLStockPredictor</h2>
+					<div class="gallery">
+						<div class="swiper mySwiper">
+							<!-- Additional required wrapper -->
+							<div class="swiper-wrapper">
+								<!-- Slides -->
+								<div class="swiper-slide">
+									<img src="images/fulls/ml_mloptions.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="images/fulls/ml_results.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="images/fulls/ml_otheroptions.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="images/fulls/ml_statsresults_1.png" />
+								</div>
+								<div class="swiper-slide">
+									<img src="images/fulls/ml_statsresults_graph.png" />
+								</div>
+							</div>
+							<!-- If we need pagination -->
+							<div class="swiper-pagination"></div>
+
+							<!-- If we need navigation buttons -->
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+						<script>
+							const swiper2 = new Swiper('.mySwiper2', {
+								// Optional parameters
+								direction: 'horizontal',
+								loop: true,
+
+								// If we need pagination
+								pagination: {
+									el: '.swiper-pagination',
+								},
+
+								// Navigation arrows
+								navigation: {
+									nextEl: '.swiper-button-next',
+									prevEl: '.swiper-button-prev',
+								}
+							});
+						</script>
+					</div>
+					<br>
+					<p style="text-align: center;">Final year university project - exploration in the feasibility of
+						using Machine Learning for predicting the stock market. </p>
+					<div class="accordion-section">
+						<div class="accordion" id="links-mlsp">
+							<h1 class="accordion-title"><a href="#links-mlsp">Links</a></h1>
+							<div class="accordion-content">
+								<div class="accordion-wrapper">
+
+									<li><a href="https://share.streamlit.io/gmcknight-devport/streamlitimpl/main/main.py"
+											target="_blank">🔗 Live Project</a></li>
+									<li><a href="https://github.com/gmcknight-devport/ComputerScienceProject"
+											target="_blank">🐙 Github</a></li>
+
+								</div>
+							</div>
+						</div>
+						<div class="accordion" id="tech-mlsp">
+							<h1 class="accordion-title"><a href="#tech-mlsp">Technical Details</a></h1>
+							<div class="accordion-content">
+								<div class="accordion-wrapper">
+									<h3>Languages and Frameworks</h3>
+									<p>
+										Python &emsp; | &emsp; FastAPI &emsp; | &emsp; Streamlit
+									</p>
+									<h3>Project Focus</h3>
+									<p>
+										Machine Learning Models &emsp; | &emsp; Lightweight API implementation
+										&emsp; | &emsp; Strongly, dynamically typed language &emsp; | &emsp;
+										Sentiment Analysis from web scraping
+									</p>
+									<h3>Architecture</h3>
+									<p>Research project using functional programming, API using OOP, Streamlit frontend
+										implementation</p>
+									<h3>Features</h3>
+
+									<li>Keras models - LSTM, Recurrent Neural Network, Convolutional Neural Network,
+										GRU, BiDirectional Model, Random Forest</li>
+									<li>Sentiment Analysis and web scraping</li>
+									<li>Ensemble models combining ML and Sentiment Analysis - allows any combination
+										Keras model with Sentiment Analysis</li>
+									<li>Naive model for baseline</li>
+									<li>Pre and post data processing</li>
+									<li>Traditional financial analysis - ArimaAuto, Moving Averages</li>
+									<li>Abstract factories used extensively</li>
+									<li>API implemented a sample analysis models</li>
+									<li>Frontend allowing the API to be used</li>
+
+								</div>
+							</div>
+						</div>
+						<div class="accordion" id="proj-mlsp">
+							<h1 class="accordion-title"><a href="#proj-mlsp">Project Details</a></h1>
+							<div class="accordion-content">
+								<div class="accordion-wrapper">
+									<p>Research Project - used a series of clients allowing factories for different
+										types of ML models to be implemented and analysed for accuracy and efficacy.</p>
+									<p>FastAPI implementation of selected models allowing a frontend to be built for a
+										user to experiment with the models.</p>
+									<p>Streamlit implementation allows users to interact with the models.</p>
+									<p>Though the research was extensive, due to the lack of predictable markers, the
+										models resort to following a random walk and copying the previous data point
+										resulting in a graph and accuracy score that look almost perfect, belying the
+										fact that the algorithm is always 1 step behind the market. The various
+										implementations could not outperform a buy-and-hold strategy due to the
+										implications of the Random Walk and Efficient Market hypothesis. Models with a
+										basis in traditional financial analysis provided a much better end result,
+										usually outperforming the baseline, providing solid and reliable information to
+										make executive decisions.</p>
+									<p>There is potential for Machine Learning tools to be implemented to support
+										traditional stock forecasting tools and industry professionals alongside
+										Sentiment Analysis to more accurately predict market movements.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a class="close-button modal-close" role="button" tabindex="0"></a>
+				</div>
+			</div>
+			<div class="project">
+				<div class="project-wrap" data-modal-trigger="modal-yurt">
+					<img src="images/fulls/yd_outside_built.jpg" alt="Yurt Image">
+					<h2>Unity Android App - Yurt Designer</h2>
+					<div class="project-text">
+						<p>Unity mobile application developed for a real-world client employing 3D modelling to be used
+							as a sales tool. Tested at a corporate event.</p>
+					</div>
+				</div>
+				<div class="project-buttons">
+					<div class="project-button">
+						<a href="https://github.com/gmcknight-devport/Yurt-Designer" target="_blank"><img
+								src="images/icon/github-icon.png" alt="Git Link"></a>
+					</div>
+				</div>
+			</div>
+			<div class="modal-container" id="modal-yurt">
+				<div class="modal">
+					<h2 class="modal-title">Unity Android App - Yurt Designer</h2>
+					<div class="gallery">
 						<div class="swiper mySwiper3">
 							<!-- Additional required wrapper -->
 							<div class="swiper-wrapper">
-							<!-- Slides -->
-							<div class="swiper-slide">
-								<img src="images/fulls/yd_outside_built.jpg" /> 
-							</div>
-							<div class="swiper-slide">
-								<img src="images/fulls/yd_build_complete.jpg" />
-							</div>
-							<div class="swiper-slide">
-								<img src="images/fulls/yd_inside-built.jpg" />
-							</div>
-							<div class="swiper-slide">
-								<img src="images/fulls/yd_outside.jpg" />
-							</div>
-							<div class="swiper-slide">
-								<img src="images/fulls/yd_build.jpg" />
-							</div>								
+								<!-- Slides -->
+								<div class="swiper-slide">
+									<img src="images/fulls/yd_outside_built.jpg" />
+								</div>
+								<div class="swiper-slide">
+									<img src="images/fulls/yd_build_complete.jpg" />
+								</div>
+								<div class="swiper-slide">
+									<img src="images/fulls/yd_inside-built.jpg" />
+								</div>
+								<div class="swiper-slide">
+									<img src="images/fulls/yd_outside.jpg" />
+								</div>
+								<div class="swiper-slide">
+									<img src="images/fulls/yd_build.jpg" />
+								</div>
 							</div>
 							<!-- If we need pagination -->
 							<div class="swiper-pagination"></div>
-						
+
 							<!-- If we need navigation buttons -->
 							<div class="swiper-button-prev"></div>
 							<div class="swiper-button-next"></div>
-						</div>									
+						</div>
 						<script>
-							const swiper3 = new Swiper('.mySwiper3', {
-							  // Optional parameters
-							  direction: 'horizontal',
-							  loop: true,
-							
-							  // If we need pagination
-							  pagination: {
-								el: '.swiper-pagination',
-							  },
-							
-							  // Navigation arrows
-							  navigation: {
-								nextEl: '.swiper-button-next',
-								prevEl: '.swiper-button-prev',
-							  },
-							
-							  // And if we need scrollbar
-							  scrollbar: {
-								el: '.swiper-scrollbar',
-							  },
+							const swiper3 = new Swiper('.mySwiper', {
+								// Optional parameters
+								direction: 'horizontal',
+								loop: true,
+
+								// If we need pagination
+								pagination: {
+									el: '.swiper-pagination',
+								},
+
+								// Navigation arrows
+								navigation: {
+									nextEl: '.swiper-button-next',
+									prevEl: '.swiper-button-prev',
+								}
 							});
 						</script>
-						<article class="col-6 col-12-xsmall work-item"></article>
-							<!-- <a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a> -->
-							
-							<p>A Unity app built for a client. A team university project wherein I was the technical lead, building an android app for a real-world client to support their local business. </p>
-							<br/>
-							<br/>
-							<p><br>Download android apk: YurtDesignerTest.apk (from initial github page, link below)</p>
-							<p>Github: <a href="https://github.com/gmcknight-devport/Yurt-Designer">https://github.com/gmcknight-devport/Yurt-Designer</a></p>
-							<br/>
-							<br/>
-							<button type="button" class="collapsible">More Info</button>								
-							<div class="content">
-								<br/>
-								<h3>Languages and Frameworks</h3>
-								<li>C#</li>
-								<br/>
-								<h3>Project Focus</h3>
-								<li>Real-world client</li>
-								<li>Unity applications</li>
-								<li>Communication and professional skills building</li>
-								<br/>
-								<h3>Features</h3>
-								<li>Component-Oriented Programming</li>
-								<li>Object Pool design pattern</li>
-								<br/>
-								<h3>The Project</h3>
-								<p>The client, Yurts For Life, requested a prototype app that could be used to show the options available on their products, citing a competitor with a similar program. Our team of 3 decided to design the app in the Unity engine using a mix of custom assets and 3rd-party assets, alongside custom-coded components and UI. I was the technical lead and responsible for the majority of the implementation. Constant communication with the client throughout to refine and develop the project according to their needs and the design brief. The prototype apk was sent to them to be used at Grand Designs Live.</p>
-								<p>The user can view the exterior, interior and build modes. They have free control to move around and can select different external designs and internal furniture to allow visualisation of a potential finished Yurt designed to their specifications.</p>
-								<br/>
-								<h3>Future Improvements</h3>
-								<li>Refinement of the art style with a dedicated and experienced designer to increase realism and immersion for user</li>
-								<li>Further features such as windows, sizes, and customisation</li>
-								<li>A finalised product according to client specifications</li>
-								<li>Significant UI refinement</li>
+					</div>
+					<br>
+					<p style="text-align: center;">A Unity app built for a client. A team university project wherein I
+						was the technical lead, building an android app for a real-world client to support their local
+						business.</p>
+					<div class="accordion-section">
+						<div class="accordion" id="links-yurt">
+							<h1 class="accordion-title"><a href="#links-yurt">Links</a></h1>
+							<div class="accordion-content">
+								<div class="accordion-wrapper">
+
+									<li>Download android apk: <strong>YurtDesignerTest.apk</strong> (from initial
+										github page, link below)</li>
+									<li><a href="https://github.com/gmcknight-devport/Yurt-Designer" target="_blank">🐙
+											Github</a></li>
+
+								</div>
 							</div>
 						</div>
-					<div class="row">
-						<h3 style="border-top: 1px solid black; width: 100%;">Base Java/Spring Boot conversion - Patient Management System</h3>
+						<div class="accordion" id="tech-yurt">
+							<h1 class="accordion-title"><a href="#tech-yurt">Technical Details</a></h1>
+							<div class="accordion-content">
+								<div class="accordion-wrapper">
+									<h3>Languages and Frameworks</h3>
+									<p>
+										C# &emsp; | &emsp; Unity Game Engine
+									</p>
+									<h3>Project Focus</h3>
+									<p>
+										Real-world client &emsp; | &emsp; Unity application
+										&emsp; | &emsp; Communication and professional skills building
+									</p>
+									<h3>Architecture</h3>
+									<p>Component-Oriented Programming</p>
+									<h3>Features</h3>
+
+									<li>3D modelling</li>
+									<li>Object pool design pattern</li>
+									<li>Mobile application</li>
+
+								</div>
+							</div>
+						</div>
+						<div class="accordion" id="proj-yurt">
+							<h1 class="accordion-title"><a href="#proj-yurt">Project Details</a></h1>
+							<div class="accordion-content">
+								<div class="accordion-wrapper">
+									<p>The client, Yurts For Life, requested a prototype app that could be used to show
+										the options available on their products, citing a competitor with a similar
+										program. Our team of 3 decided to design the app in the Unity engine using a mix
+										of custom assets and 3rd-party assets, alongside custom-coded components and UI.
+										I was the technical lead and responsible for the majority of the implementation.
+										Constant communication with the client throughout to refine and develop the
+										project according to their needs and the design brief. The prototype apk was
+										sent to them to be used at Grand Designs Live.</p>
+									<p>The user can view the exterior, interior and build modes. They have free control
+										to move around and can select different external designs and internal furniture
+										to allow visualisation of a potential finished Yurt designed to their
+										specifications.</p>
+								</div>
+							</div>
+						</div>
+						<div class="accordion" id="future-yurt">
+							<h1 class="accordion-title"><a href="#future-yurt">Future Improvements</a></h1>
+							<div class="accordion-content">
+								<div class="accordion-wrapper">
+									<li>Refinement of the art style with a dedicated and experienced designer to
+										increase realism and immersion for user</li>
+									<li>Further features such as windows, sizes, and customisation</li>
+									<li>A finalised product according to client specifications</li>
+									<li>Significant UI refinement</li>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a class="close-button modal-close" role="button" tabindex="0"></a>
+				</div>
+			</div>
+			<div class="project">
+				<div class="project-wrap" data-modal-trigger="modal-pat">
+					<img class="pms-img" src="images/fulls/pms_sec_appoints.png" alt="Pat Image">
+					<h2>Base Java/Spring Boot conversion - Patient Management System</h2>
+					<div class="project-text">
+						<p>Two versions of a Patient Management System in Java - an original, and a modern Spring Boot
+							conversion. Focus on design patterns and OOP.</p>
+					</div>
+				</div>
+			</div>
+			<div class="modal-container" id="modal-pat">
+				<div class="modal">
+					<h2 class="modal-title">Base Java/Spring Boot conversion - Patient Management System</h2>
+					<div class="gallery">
 						<div class="swiper mySwiper4">
 							<!-- Additional required wrapper -->
 							<div class="swiper-wrapper">
-							<!-- Slides -->
-							<div class="swiper-slide">
-								<img src="images/fulls/pms_sec_appoints.png" /> 
-							</div>
-							<div class="swiper-slide">
-								<img src="images/fulls/pms_sec_meds.png" />
-							</div>
-							<div class="swiper-slide">
-								<img src="images/fulls/pms_doc_pats.png" />
-							</div>
-							<div class="swiper-slide">
-								<img src="images/fulls/pms_pat_ratings.png" />
-							</div>
-							<div class="swiper-slide">
-								<img src="images/fulls/pms_admin.png" />
-							</div>								
+								<!-- Slides -->
+								<div class="swiper-slide">
+									<div class="img-container">
+										<img src="images/fulls/pms_sec_appoints.png" />
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="img-container">
+										<img src="images/fulls/pms_sec_meds.png" />
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="img-container">
+										<img src="images/fulls/pms_doc_pats.png" />
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="img-container">
+										<img src="images/fulls/pms_pat_ratings.png" />
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="img-container">
+										<img src="images/fulls/pms_admin.png" />
+									</div>
+								</div>
 							</div>
 							<!-- If we need pagination -->
 							<div class="swiper-pagination"></div>
-						
+
 							<!-- If we need navigation buttons -->
 							<div class="swiper-button-prev"></div>
 							<div class="swiper-button-next"></div>
-						</div>									
+						</div>
 						<script>
 							const swiper4 = new Swiper('.mySwiper4', {
-							  // Optional parameters
-							  direction: 'horizontal',
-							  loop: true,
-							
-							  // If we need pagination
-							  pagination: {
-								el: '.swiper-pagination',
-							  },
-							
-							  // Navigation arrows
-							  navigation: {
-								nextEl: '.swiper-button-next',
-								prevEl: '.swiper-button-prev',
-							  },
-							
-							  // And if we need scrollbar
-							  scrollbar: {
-								el: '.swiper-scrollbar',
-							  },
+								// Optional parameters
+								direction: 'horizontal',
+								loop: true,
+
+								// If we need pagination
+								pagination: {
+									el: '.swiper-pagination',
+								},
+
+								// Navigation arrows
+								navigation: {
+									nextEl: '.swiper-button-next',
+									prevEl: '.swiper-button-prev',
+								}
 							});
 						</script>
-						<article class="col-6 col-12-xsmall work-item"></article>	
-						<p>Originally a plain Java university project with a conversion to Spring Boot to work with a modern framework and address the issues of the original brief. </p>
-						<br/>						
-						<p style="padding-right: 40vw;"><br/>Github:</p>						
-						<li><a href="https://github.com/gmcknight-devport/PatientManagementSystem_UniProj" style="margin-top: 5vh;">https://github.com/gmcknight-devport/PatientManagementSystem_UniProj</a></li>
-						<li><a href="https://github.com/gmcknight-devport/PatientManagementSystem_SpringBootConversion">https://github.com/gmcknight-devport/PatientManagementSystem_SpringBootConversion</a></li>
-						<p>Download executable jar: PatientManagementSystem.jar (from initial github page of each project)</p>
-						<p style="padding-right: 40vw;"><strong> Test Profiles: </strong></p>
-						<li><strong> Username - </strong>P1001,&emsp; <strong> Password -</strong> patientpassword</li>
-						<li><strong> Username - </strong>P1002,&emsp; <strong> Password -</strong> 2ndpatientpassword</li>
-						<li><strong> Username - </strong>P1003,&emsp; <strong> Password -</strong> 3rdpatientpassword</li>
-						<li><strong> Username - </strong>D1001,&emsp; <strong> Password -</strong> doctorpassword</li>
-						<li><strong> Username - </strong>D1002,&emsp; <strong> Password -</strong> 2nddoctorpassword</li>
-						<li><strong> Username - </strong>D1003,&emsp; <strong> Password -</strong> 3rddoctorpassword</li>
-						<li><strong> Username - </strong>S1001,&emsp; <strong> Password -</strong> secpassword</li>
-						<li><strong> Username - </strong>A1001,&emsp; <strong> Password -</strong> adminpassword</li>
-						<br/>
-						<br/>
-						<button type="button" class="collapsible">More Info</button>								
-						<div class="content">
-							<br/>
-							<h3>Languages and Frameworks</h3>
-							<li>Java</li>
-							<li>Spring Boot</li>
-							<br/>
-							<h3>Project Focus</h3>
-							<li>Design Patterns</li>
-							<li>Modern Java framework conversion</li>
-							<li>In-memory database</li>
-							<br/>
-							<h3>Architecture</h3>
-							<p>Model View Controller (MVC)</p>
-							<h3>Features</h3>
-							<li>Design patterns - Observer, Factory, Strategy, Facade, Repository, Serialization Proxy</li>
-							<li>Messaging between users</li>
-							<li>Serialisation</li>
-							<li>Unit testing, Mockito</li>
-							<li>Embedded database</li>
-							<br/>
-							<h3>The Project</h3>
-							<p>Originally a university project with a focus on design patterns using serialisation and base Java to create a patient management system allowing patients to access care from doctors and support staff. Further developed into a Spring Boot project to harness a modern framework with a database, removing the security concerns of serialisation. Interesting opportunity to use the Serialization Proxy pattern to mitigate these issues in the original implementation.</p>
-							<br/>
-							<p>Each user type has their own GUI as part of the MVC architecture, allowing for only specific functions to be carried out relevant to their system role.</p>
-							<br/>
-							<h3>Future Improvements</h3>
-							<li>Improved UI</li>
-							<li>Additional functionality</li>
+					</div>
+					<br>
+					<p style="text-align: center;">Originally a plain Java university project with a conversion to
+						Spring Boot to work with a modern framework and address the issues of the original brief.
+					</p>
+					<div class="accordion-section">
+						<div class="accordion" id="links-pat">
+							<h1 class="accordion-title"><a href="#links-pat">Links & Test Data</a></h1>
+							<div class="accordion-content">
+								<div class="accordion-wrapper">
+									<h3>Test Profiles</h3>
+									<li><strong>Username - </strong> P1001, <strong>Password - </strong> patientpassword
+									</li>
+									<li><strong>Username - </strong> D1001, <strong>Password - </strong> doctorpassword
+									</li>
+									<li><strong>Username - </strong> S1001, <strong>Password - </strong> secpassword
+									</li>
+									<li><strong>Username - </strong> A1001, <strong>Password - </strong> adminpassword
+									</li>
+									<h3>Links</h3>
+									<li>Download executable jar: <strong> PatientManagementSystem.jar</strong> (from
+										initial github page of each project)</li>
+									<li><a href="https://github.com/gmcknight-devport/PatientManagementSystem_UniProj"
+											target="_blank">🐙 Github - vanilla Java</a></li>
+									<li><a href="https://github.com/gmcknight-devport/PatientManagementSystem_SpringBootConversion"
+											target="_blank">🐙 Github - Spring Boot</a></li>
+								</div>
+							</div>
+						</div>
+						<div class="accordion" id="tech-pat">
+							<h1 class="accordion-title"><a href="#tech-pat">Technical Details</a></h1>
+							<div class="accordion-content">
+								<div class="accordion-wrapper">
+									<h3>Languages and Frameworks</h3>
+									<p>
+										Java &emsp; | &emsp; Spring Boot
+									</p>
+									<h3>Project Focus</h3>
+									<p>
+										Design Patterns &emsp; | &emsp; Modern Java framework conversion &emsp; |
+										&emsp; In-memory database
+									</p>
+									<h3>Architecture</h3>
+									<p>Model View Controller (MVC)</p>
+									<h3>Features</h3>
+									<li>Design patterns - Observer, Factory, Strategy, Facade, Repository, Serialization
+										Proxy</li>
+									<li>Messaging between users</li>
+									<li>Serialisation</li>
+									<li>Unit testing, Mockito</li>
+									<li>Embedded database</li>
+								</div>
+							</div>
+						</div>
+						<div class="accordion" id="proj-pat">
+							<h1 class="accordion-title"><a href="#proj-pat">Project Details</a></h1>
+							<div class="accordion-content">
+								<div class="accordion-wrapper">
+									<p>Originally a university project with a focus on design patterns using
+										serialisation and base Java to create a patient management system allowing
+										patients
+										to access care from doctors and support staff. Further developed into a Spring
+										Boot
+										project to harness a modern framework with a database, removing the security
+										concerns of serialisation. Interesting opportunity to use the Serialization
+										Proxy
+										pattern to mitigate these issues in the original implementation.</p>
+									<p>Each user type has their own GUI as part of the MVC architecture, allowing for
+										only specific functions to be carried out relevant to their system role.</p>
+								</div>
+							</div>
+						</div>
+						<div class="accordion" id="future-pat">
+							<h1 class="accordion-title"><a href="#future-pat">Future Improvements</a></h1>
+							<div class="accordion-content">
+								<div class="accordion-wrapper">
+									<li>Improved UI</li>
+									<li>Additional functionality</li>
+								</div>
+							</div>
 						</div>
 					</div>
+					<a class="close-button modal-close" role="button" tabindex="0"></a>
 				</div>
-			</section>
+			</div>
 		</div>
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script src="assets/js/slideshow.js"></script>
-	</body>
-</html>
+	</section>
+
+	<!--
+		Use Google docs to check all text for grammar and spelling
+
+		Responsiveness for different devices - media queries? flex-direction:column for the skills icons so text isn't cutoff.
+			- mobile, tablet, 2 sizes of screen (much smaller modal etc). Hamburger menu
+
+		PUSH AND DELAY EMAIL FARRAH
+
+		Blog tagging system?
+
+		Tightening up of all the writing for each section - better delineate the sections. Go through projects for inspiration (especialy focus on MLSP)
+		-->
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="assets/js/navbar.js"></script>
+	<script src="assets/js/swiper.js"></script>
+	<script src="assets/js/modal.js" defer></script>
+</body>

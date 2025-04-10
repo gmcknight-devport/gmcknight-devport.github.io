@@ -1,0 +1,42 @@
+/* Mobile First - base styles assumed to be for small screens */
+
+/* Tablets (portrait) */
+@media (min-width: 600px) {
+    /* adjust paddings/margins, layout tweaks for tablets */
+}
+
+/* Tablets & small laptops */
+@media (min-width: 768px) {
+    .about-main {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .about-profile {
+        flex: 1 1 45%;
+        padding-right: 2rem;
+    }
+
+    .about-skills {
+        flex: 1 1 45%;
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+/* Laptops and medium desktops */
+@media (min-width: 1024px) {
+    header {
+        padding: 2rem 4rem;
+    }
+}
+
+/* Large monitors */
+@media (min-width: 1440px) {
+    .section-heading {
+        font-size: 2.5rem;
+    }
+}

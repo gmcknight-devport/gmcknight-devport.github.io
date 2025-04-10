@@ -1,0 +1,464 @@
+.projects {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr !important;
+    /* always 2 columns */
+    gap: 4rem;
+
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto 6rem;
+    padding: 0 1rem;
+
+    /* critical line: stops grid from adding columns */
+    grid-auto-flow: row;
+}
+
+@media (max-width: 900px) {
+    .project-grid {
+        grid-template-columns: 1fr !important;
+        max-width: 70%;
+        /* allow full width on mobile */
+    }
+}
+
+.project {
+    margin: 0px auto;
+    padding: 1rem;
+    padding-bottom: 0.2rem;
+    border-radius: 2rem;
+    border: 1px solid white;
+    position: relative;
+    background-color: #1a1a1a;
+    border: double 3px transparent;
+    border-image-slice: 100%;
+    border-image-slice: 1;
+    background-image: linear-gradient(#1a1a1a, #1a1a1a), radial-gradient(circle at top left, white, #0088CC);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 770px) {
+    .project {
+        max-width: 405px !important;
+        width: 100% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+
+.project-wrap {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: flex-start;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.project-wrap>img {
+    display: flex;
+    width: 100%;
+    object-fit: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    border-radius: 0.8rem;
+    border: 1px solid white;
+    cursor: pointer;
+    height: 55vh;
+}
+
+.project-wrap h2 {
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+}
+
+.pms-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: left center;
+    aspect-ratio: 2 / 1;
+    overflow: hidden;
+}
+
+.project:hover {
+    box-shadow: 0 4px 20px #0088CC;
+}
+
+.project-text {
+    gap: 1rem;
+    color: white;
+    cursor: pointer;
+    margin-bottom: auto;
+}
+
+.project-buttons {
+    margin-top: 0;
+    margin-bottom: 0 !important;
+    bottom: 0 !important;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.project-button a {
+    border-bottom: none;
+}
+
+.project-button img {
+    max-width: 4vw;
+    max-height: 4vh;
+    border: 1px solid white;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    list-style: none;
+}
+
+@media (max-width: 770px) {
+    .project-button img {
+        max-width: 8vw;
+        max-height: 8vh;
+    }
+}
+
+/* Modals */
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: hsl(220, 25%, 10%);
+}
+
+.modal-container.active {
+    display: flex;
+}
+
+.modal {
+    position: relative;
+    max-height: 90vh;
+    width: 80vw;
+    max-width: 1000px;
+    padding: 2rem 2rem;
+    border-radius: .8rem;
+    background: linear-gradient(to right, hsl(210, 30%, 20%), hsl(255, 30%, 25%));
+    box-shadow: .4rem .4rem 10.2rem .2rem hsla(236, 50%, 50%, .3);
+    position: relative;
+    overflow-y: scroll;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.modal::-webkit-scrollbar {
+    width: 0.2rem;
+}
+
+.modal::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.modal::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 2px;
+}
+
+.modal-title {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.modal-text {
+    padding: 0 4rem;
+    margin-top: 4rem;
+    font-size: 1.6rem;
+    line-height: 2;
+    border: 1px solid white;
+    text-align: left;
+}
+
+.no-scroll {
+    overflow: hidden;
+    height: 100vh;
+}
+
+.close-button {
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid white;
+    border-radius: 120px;
+
+    color: inherit;
+    font-size: 2rem;
+
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: .2s;
+}
+
+.close-button::before {
+    content: '×';
+}
+
+.close-button:hover,
+.close-button:focus {
+    background: #0088CC;
+    border-color: white;
+    transform: translateY(-.2rem);
+    cursor: pointer;
+}
+
+@media (max-width: 770px) {
+    .close-button {
+        top: .4rem;
+        right: .4rem;
+    }
+
+    .project-wrap>img {
+        height: auto !important;
+        max-height: none !important;
+        object-fit: contain !important;
+    }
+
+    .swiper-slide {
+        height: auto !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .swiper-slide img {
+        height: auto !important;
+        max-height: 70vh; /* or remove if you want full height */
+        width: 100%;
+        object-fit: contain !important;
+      }
+    
+      .swiper-wrapper {
+        height: auto !important;
+      }
+    
+      .swiper {
+        height: auto !important;
+      }
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Accordion css */
+.accordion-section a,
+.accordion-section p,
+.accordion-section h1 {
+    margin: 0;
+}
+
+.accordion-section *,
+.accordion-section *::before,
+.accordion-section *::after {
+    position: relative;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    border-bottom: none;
+}
+
+::selection {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.accordion {
+    --size-header: 2.25rem;
+    --size-accordion-title: 1.25rem;
+    --size-accordion-content: 1rem;
+    --animation-speed: 100;
+    --slide-ease: cubic-bezier(0.86, 0, 0.07, 1);
+    --slide-duration: calc(400ms * 100 / var(--animation-speed));
+    --slide-delay: calc(450ms * 100 / var(--animation-speed));
+    --circle-duration: calc(900ms * 100 / var(--animation-speed));
+    --circle-x: 1.8rem;
+    --circle-y: 0;
+    --circle-r: 200%;
+    --circle-bg: #fff;
+    background-color: inherit;
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: min(8px, 0.5rem);
+
+    display: grid;
+    grid-template-rows: 0fr 0fr;
+    transition-timing-function: var(--slide-ease);
+    transition-duration: 200ms, 200ms, var(--slide-duration);
+    transition-property: opacity, box-shadow, grid-template-rows;
+    transition-delay: 0ms, 0ms, var(--slide-delay);
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.25);
+    opacity: 0.9;
+}
+
+.accordion:not(:target):hover {
+    box-shadow: 0 0 0 2px white;
+}
+
+.accordion a:not(:target):hover {
+    color: #0088CC !important;
+}
+
+.accordion:not(:target):active {
+    opacity: 1;
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.3);
+}
+
+.accordion-content {
+    overflow: hidden;
+}
+
+.accordion:target {
+    --d: 90deg;
+    grid-template-rows: 0fr 1fr;
+    transition: grid-template-rows var(--slide-ease) var(--slide-duration) var(--slide-delay);
+}
+
+.accordion-wrapper {
+    padding-block: 0 1.05rem;
+    padding-inline: 1.25rem;
+}
+
+.accordion-wrapper h3 {
+    margin: 0 0 0 0;
+    color: #0088CC;
+}
+
+.accordion-wrapper ul {
+    margin: 0 0 1rem 0
+}
+
+.accordion-content {
+    font-size: var(--size-accordion-content);
+    line-height: 140%;
+}
+
+.accordion-content p {
+    margin-bottom: 1rem;
+}
+
+.accordion-title a {
+    padding: 1rem 1.25rem;
+    font-size: var(--size-accordion-title);
+    font-weight: 800;
+    color: currentColor;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+}
+
+.accordion-title a::before {
+    --chevron-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3C!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --%3E%3Cpath fill='white' d='M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z'/%3E%3C/svg%3E");
+    content: "";
+    left: 0;
+    top: 0;
+    width: 0.65rem;
+    aspect-ratio: 320 / 512;
+    display: inline-block;
+    margin-right: 0.75rem;
+    transform: rotate(var(--d, 0deg));
+    transition: transform var(--slide-ease) var(--slide-duration) var(--slide-delay);
+    mask-image: var(--chevron-icon);
+    mask-size: 100% 100%;
+    -webkit-mask-image: var(--chevron-icon);
+    -webkit-mask-size: 100% 100%;
+    background-color: currentColor;
+}
+
+.accordion::before,
+.accordion::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border: 1px solid white;
+    mix-blend-mode: difference;
+    transform-style: preserve-3d;
+    transition-timing-function: ease;
+    transition-property: opacity, clip-path, visibility;
+    pointer-events: none;
+    clip-path: circle(var(--r) at var(--circle-x) var(--circle-y));
+    border-radius: inherit;
+    z-index: 4;
+}
+
+.accordion::before {
+    --r: 0%;
+    transition-delay: var(--circle-duration), var(--circle-duration), 0ms;
+    transition-duration: 0ms, var(--circle-duration), 0ms;
+    opacity: 0;
+}
+
+.accordion:target::before {
+    --r: var(--circle-r);
+    transition-delay: 0ms, 0ms, 0ms;
+    transition-duration: 0ms, var(--circle-duration), 0ms;
+    opacity: 1;
+}
+
+.accordion::after {
+    --r: var(--circle-r);
+    transition-delay: 0ms, 0ms, var(--circle-duration);
+    transition-duration: 0ms, var(--circle-duration), 0ms;
+    visibility: hidden;
+    opacity: 1;
+}
+
+.accordion:target:after {
+    --r: 0%;
+    transition-delay: 0ms, 0ms, 0ms;
+    transition-duration: 0ms, 0ms, 0ms;
+    visibility: visible;
+    opacity: 0;
+}
+
+.accordion-title a:focus-visible {
+    background-color: hsl(0, 100%, 90%);
+    outline: none;
+}
+
+.accordion:target .title a:focus-visible {
+    background-color: hsl(183, 100%, 93%);
+}
