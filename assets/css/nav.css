@@ -96,6 +96,10 @@
     text-decoration: none !important;
 }
 
+.hamburger-menu a.active {
+    color: #0088CC !important;
+}
+
 /* Show only on mobile */
 @media (max-width: 767px) {
     .hamburger-nav {
@@ -104,7 +108,7 @@
         align-items: flex-start;
     }
 
-    .nav-bar{
+    .nav-bar {
         display: none;
     }
 }

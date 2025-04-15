@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   // === Section Scroll Highlight ===
   const sections = [...document.querySelectorAll("section, header")].filter(el => el.id);
-  const navLinks = document.querySelectorAll(".nav-item a");
+  const navLinks = document.querySelectorAll(".nav-item a, .hamburger-menu a");
 
   const updateNav = () => {
     let current = "";
