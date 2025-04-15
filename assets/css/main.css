@@ -131,7 +131,10 @@ ol {
 }
 
 li {
-	padding-left: 2em;
+	/* padding-left: 2em;
+	text-indent: -1.4em; */
+	list-style-position: outside;
+	margin-left: 1.4em;      /* moves the whole block right */
 	text-indent: -1.4em;
 }
 
