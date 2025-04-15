@@ -131,13 +131,10 @@ ol {
 }
 
 li {
-	padding-left: .2em;
+	padding-left: 2em;
+	text-indent: -1.4em;
 }
 
-
-li {
-	margin-left: 3vw;
-}
 
 blockquote,
 q {
