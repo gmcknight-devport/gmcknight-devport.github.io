@@ -130,14 +130,15 @@ ol {
 	list-style-position: outside;
 }
 
-li {
-	/* padding-left: 2em;
-	text-indent: -1.4em; */
+ul {
 	list-style-position: outside;
-	margin-left: 1.4em;      /* moves the whole block right */
-	text-indent: -1.4em;
+	padding-left: 2em!important; /* Adjust to your visual preference */
 }
-
+  
+li {
+	text-indent: 0em; /* Creates the hanging indent *
+}
+  
 
 blockquote,
 q {
