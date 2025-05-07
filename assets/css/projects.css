@@ -73,6 +73,18 @@
     height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
+
+    
+}
+
+/* Firefox scrollbar fix */
+@-moz-document url-prefix(){
+    .project-wrap{
+        scrollbar-width: thin;
+        scrollbar-color: white transparent;
+        scrollbar-gutter: stable;
+        padding: 0.4rem;
+    }
 }
 
 .project-wrap>img {

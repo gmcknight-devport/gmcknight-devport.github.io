@@ -260,13 +260,36 @@ textarea {
 	/* this part matters */
 }
 
+.mySwiper {
+	width: 70vw;
+	height: 70vh;
+	background-color: black;
+	border-radius: 15px;
+	border: 1px solid white;
+}
+
+.mySwiper3 {
+	background-color: black;
+	border-radius: 15px;
+	border: 1px solid white;
+}
+
+.mySwiper4 {
+	background-color: black;
+	border-radius: 15px;
+	border: 1px solid white;
+}
+
+.swiper-wrapper{
+	align-items: center;
+}
+
 .swiper-slide img {
 	max-height: 100%;
 	max-width: 100%;
 	object-fit: contain;
 	display: block;
 	margin: auto;
-	/* 👈 this is the magic */
 }
 
 .img-container {
@@ -274,6 +297,7 @@ textarea {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin: auto!important;
 }
 
 .img-container img {
